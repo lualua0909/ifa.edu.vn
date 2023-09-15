@@ -1,0 +1,119 @@
+.contact-wrapper {
+	padding: 60px 0;
+
+	.content-wrapper {
+		.entry-title {
+			color: #ad2328;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+
+		.entry-content {
+			font-weight: 500;
+		}
+	}
+
+	.contact-info {
+		margin-top: 30px;
+		font-weight: 500;
+
+		.info-list {
+			li {
+				position: relative;
+				padding-left: 35px;
+				margin-bottom: 15px;
+
+				span {
+					position: absolute;
+					left: 0;
+					top: 0;
+					color: #ad2328;
+					font-size: 19px;
+				}
+			}
+		}
+	}
+
+	.social-wrapper {
+		margin-top: 30px;
+
+		a {
+			background-color: #ccc;
+			@include inline-flex();
+			@include align-items(center);
+			border-radius: 3px;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			position: relative;
+			z-index: 1;
+
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 45px;
+				background-color: rgba(0, 0, 0, .3);
+				@include transition(.3s all);
+				border-radius: 3px;
+			}
+
+			&.facebook {
+				background-color: #4267B2;
+			}
+
+			&.zalo {
+				background-color: #0180C7;
+			}
+
+			&.youtube {
+				background-color: #FF0000;
+			}
+
+			.logo {
+				z-index: 1;
+				width: 45px;
+				height: 45px;
+				@include flexbox();
+				@include justify-content(center);
+				@include align-items(center);
+				border-radius: 3px;
+
+				img {
+					max-width: 25px;
+				}
+			}
+
+			.text {
+				display: block;
+				padding: 5px 20px;
+				font-weight: 500;
+				color: #fff;
+				font-size: 14px;
+			}
+		}
+	}
+
+	.map-wrapper {
+		position: relative;
+		padding-top: 56.25%;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

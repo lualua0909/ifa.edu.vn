@@ -1,0 +1,14 @@
+/*
+Theme Name: IFA
+Theme URI: https://abc
+Description: Cảm ơn bạn đã sử dụng dịch vụ của tôi. Nghiêm cấm sao chép và phát hành lại với mọi hình thức.
+Author: Thupt
+Author URI: https:abc
+Version: 1.2.9
+Text Domain: ifa
+*/
+.sub-menu {
+    z-index:999999 !important;
+}
+
+.fabs { display: none; }

@@ -1,0 +1,103 @@
+#back-to-top {
+	position: fixed;
+	right: 30px;
+	bottom: 15px;
+	z-index: 999;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background-color: #07ABF6;
+	border: 3px solid #fff;
+	cursor: pointer;
+	@include responsive(991) {
+		right: 15px;
+	}
+}
+
+.fabs {
+	position: fixed;
+	right: 30px;
+	bottom: 80px;
+	z-index: 999;
+	@include responsive(991) {
+		right: 15px;
+	}
+
+	.fab, .fab-prime {
+		display: block;
+		cursor: pointer;
+		@include transition(.3s all);
+	}
+
+	#prime {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background-color: #07ABF6;
+		@include flexbox();
+		@include align-items(center);
+		@include justify-content(center);
+		font-size: 20px;
+		color: #fff;
+		position: relative;
+		z-index: 2;
+
+		i {
+			@include transition(.3s all);
+		}
+
+		&.active {
+			i {
+				@include transform(rotate(135deg));
+			}
+		}
+	}
+
+	.fab-btn {
+		width: 45px;
+		height: 45px;
+		@include flexbox();
+		@include align-items(center);
+		@include justify-content(center);
+		border-radius: 50%;
+		background-color: #fff;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+		position: absolute;
+		top: 0;
+		left: 50%;
+		z-index: 1;
+		@include transform(translateX(-50%));
+		opacity: 0;
+		cursor: pointer;
+
+		&.active {
+			opacity: 1;
+
+			&:nth-child(1) {
+				@include transform(translate(-50%, -55px));
+			}
+
+			&:nth-child(2) {
+				@include transform(translate(-50%, -110px));
+			}
+
+			&:nth-child(3) {
+				@include transform(translate(-50%, -165px));
+			}
+
+			&:nth-child(4) {
+				@include transform(translate(-50%, -220px));
+			}
+
+			&:nth-child(5) {
+				@include transform(translate(-50%, -275px));
+			}
+		}
+
+		img {
+			max-width: 35px;
+			max-height: 35px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,185 @@
+.training-template-wrapper {
+	padding: 80px 0 120px 0;
+	overflow: hidden;
+	margin-bottom: 140px;
+	@include responsive(991) {
+		padding: 50px 0 120px 0;
+	}
+	@include responsive(767) {
+		padding: 20px 0 120px 0;
+	}
+
+	.training-section {
+		@include flexbox();
+		@include flex-wrap(wrap);
+
+		&:nth-child(odd) {
+			.content-wrapper {
+				padding-left: 10%;
+				padding-right: 100px;
+				@include responsive(1439) {
+					padding-left: 8%;
+					padding-right: 50px;
+				}
+				@include responsive(1199) {
+					padding-left: 40px;
+				}
+				@include responsive(991) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+
+		&:nth-child(even) {
+			@include flex-direction(row-reverse);
+			@include responsive(991) {
+				@include flex-direction(row);
+			}
+
+			.content-wrapper {
+				padding-right: 10%;
+				padding-left: 100px;
+				text-align: right;
+				@include responsive(1439) {
+					padding-right: 8%;
+					padding-left: 50px;
+				}
+				@include responsive(1199) {
+					padding-right: 40px;
+				}
+				@include responsive(991) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+
+				.section-title {
+					&:after {
+						left: unset;
+						right: 0;
+					}
+				}
+
+				.button-wrapper {
+					.view-more-button {
+						&:before {
+							right: unset;
+							left: -14px;
+							@include transform(rotate(180deg));
+						}
+					}
+				}
+			}
+		}
+
+		.content-wrapper, .img-wrapper {
+			@include flex-basis(50%);
+			max-width: 50%;
+			@include responsive(991) {
+				@include flex-basis(100%);
+				max-width: 100%;
+			}
+		}
+
+		.section-title {
+			font-size: 36px;
+			color: #040404;
+			font-weight: 800;
+			text-transform: uppercase;
+			line-height: 1.2;
+			position: relative;
+			margin-bottom: 40px;
+			@include responsive(1199) {
+				font-size: 30px;
+			}
+			@include responsive(767) {
+				font-size: 25px;
+			}
+			@include responsive(575) {
+				font-size: 20px;
+			}
+
+			&:after {
+				content: '';
+				width: 340px;
+				height: 1px;
+				background-color: rgb(204, 33, 40);
+				display: block;
+				margin-top: 18px;
+				position: absolute;
+				left: 0;
+				bottom: -21px;
+				@include responsive(767) {
+					width: 200px;
+				}
+			}
+
+			span {
+				color: rgb(204, 33, 40);
+				display: block;
+				@include responsive(991) {
+					display: inline-block;
+				}
+			}
+		}
+
+		.content-wrapper {
+			padding-top: 60px;
+			padding-bottom: 30px;
+			@include responsive(991) {
+				padding: 20px 0;
+			}
+
+			.section-content {
+				font-size: 14px;
+				color: rgb(0, 0, 0);
+				line-height: 1.429;
+				font-weight: 300;
+				margin-bottom: 20px;
+			}
+		}
+
+		.button-wrapper {
+			.view-more-button {
+				font-size: 15.678px;
+				color: rgb(255, 255, 255);
+				font-weight: 700;
+				border-radius: 5px;
+				background-color: rgb(204, 33, 40);
+				width: 150px;
+				height: 44px;
+				position: relative;
+				@include inline-flex();
+				@include align-items(center);
+				@include justify-content(center);
+
+				&:before {
+					content: '';
+					width: 30px;
+					height: 30px;
+					display: block;
+					background-size: 30px 30px;
+					background-image: url("../images/arrow-circle.png");
+					position: absolute;
+					top: 8px;
+					right: -14px;
+					@include responsive(767) {
+						top: 5px;
+					}
+				}
+			}
+		}
+
+		.img-wrapper {
+			min-height: 500px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 0 24px 52px 0 rgba(47, 47, 51, 0.2);
+			position: relative;
+			@include responsive(1199) {
+				min-height: 425px;
+			}
+		}
+	}
+}

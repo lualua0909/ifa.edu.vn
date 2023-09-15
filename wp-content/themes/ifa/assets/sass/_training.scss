@@ -1,0 +1,101 @@
+.training-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 540px;
+	position: relative;
+	z-index: 1;
+	padding: 40px 0 50px 0;
+
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: -moz-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		background-image: -webkit-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		background-image: -ms-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		opacity: 0.749;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgb(26, 26, 26);
+		opacity: 0.8;
+	}
+
+	.training-title {
+		font-size: 26px;
+		color: rgb(255, 255, 255);
+		font-weight: 900;
+		margin-bottom: 10px;
+		@include responsive(767) {
+			font-size: 20px;
+		}
+	}
+
+	.training-desc {
+		font-size: 16px;
+		color: rgb(255, 255, 255);
+		line-height: 1.5;
+		font-weight: 300;
+		margin-bottom: 13px;
+	}
+
+	.view-more-button {
+		font-size: 15.678px;
+		color: rgb(255, 255, 255);
+		font-weight: 800;
+		border-radius: 5px;
+		background-color: rgb(204, 33, 40);
+		width: 177px;
+		height: 52px;
+		position: relative;
+		@include inline-flex();
+		@include align-items(center);
+		@include justify-content(center);
+		margin-bottom: 35px;
+		@include responsive(767) {
+			height: 45px;
+		}
+
+		&:before {
+			content: '';
+			width: 34px;
+			height: 34px;
+			display: block;
+			background-size: 34px 34px;
+			background-image: url("../images/arrow-circle.png");
+			position: absolute;
+			top: 9px;
+			right: -16px;
+			@include responsive(767) {
+				top: 5px;
+			}
+		}
+	}
+
+	.training-img {
+		border-radius: 25px;
+		box-shadow: 0 0 24px 0 rgba(38, 0, 0, 0.72);
+		height: 207px;
+		overflow: hidden;
+		@include responsive(767) {
+			margin-bottom: 30px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

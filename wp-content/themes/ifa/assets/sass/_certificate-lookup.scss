@@ -1,0 +1,137 @@
+.category-hoc-vien, .page-template-training {
+	.certificate-lookup-wrapper {
+		padding: 100px 0 330px 0;
+		@include responsive(767) {
+			padding: 30px 0 230px 0;
+		}
+	}
+}
+
+.certificate-lookup-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	padding: 100px 0 100px 0;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+	}
+
+	&:before {
+		z-index: -1;
+		background-image: -moz-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		background-image: -webkit-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		background-image: -ms-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		opacity: 0.749;
+	}
+
+	&:after {
+		z-index: -2;
+		background-color: rgba(26, 26, 26, .8);
+	}
+
+	.section-heading {
+		text-align: center;
+
+		.section-title {
+			font-size: 36px;
+			color: rgb(255, 255, 255);
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-bottom: 17px;
+			@include responsive(767) {
+				font-size: 24px;
+			}
+		}
+
+		.desc {
+			font-size: 18px;
+			color: rgb(255, 255, 255);
+			line-height: 1.333;
+			font-weight: 300;
+			margin-bottom: 30px;
+
+			a {
+				color: rgb(255, 255, 255);
+			}
+		}
+	}
+
+	.certificate-lookup-form-wrapper {
+		position: relative;
+		padding-top: 56.25%;
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		#certificate-lookup-form {
+			.elements-container {
+				@include flexbox();
+				@include flex-wrap(wrap);
+				background-color: #fff;
+				border-radius: 5px;
+
+				.input-col {
+					@include flex-basis(calc(100% - 157px));
+					max-width: calc(100% - 157px);
+
+					input {
+						width: 100%;
+						height: 51px;
+						border-radius: 5px;
+						border: 1px solid #fff;
+					}
+				}
+
+				.button-col {
+					@include flex-basis(157px);
+					max-width: 157px;
+
+					button {
+						width: 100%;
+						height: 51px;
+						border-radius: 5px;
+						color: rgb(255, 255, 255);
+						font-size: 14px;
+						font-weight: 800;
+						background-color: rgb(204, 33, 40);
+						border: 1px solid rgb(204, 33, 40);
+						@include transform(.3s all);
+						position: relative;
+						@include flexbox();
+						@include justify-content(center);
+						@include align-items(center);
+
+						&:after {
+							content: '';
+							display: block;
+							width: 34px;
+							height: 34px;
+							background-size: 34px 34px;
+							background-repeat: no-repeat;
+							background-image: url("../images/button-icon.png");
+							margin-left: 10px;
+						}
+
+						&:hover {
+							background-color: #9f161c;
+							border: 1px solid #9f161c;
+						}
+					}
+				}
+			}
+		}
+	}
+}

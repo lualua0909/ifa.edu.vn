@@ -1,0 +1,373 @@
+.cooperate-wrapper {
+	padding: 100px 0;
+	overflow: hidden;
+
+	#breadcrumbs {
+		font-size: 12px;
+		font-weight: 300;
+		color: rgb(204, 33, 40);
+		margin-bottom: 45px;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.entry-title {
+		font-size: 25px;
+		color: rgb(204, 33, 40);
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	.cooperate {
+		position: relative;
+		z-index: 1;
+
+		&.cooperate-1 {
+			min-height: 550px;
+			margin-bottom: 40px;
+			@include responsive(1199) {
+				margin-bottom: 80px;
+			}
+			@include responsive(767) {
+				min-height: 770px;
+			}
+			@include responsive(574) {
+				min-height: 965px;
+			}
+
+			&:before {
+				content: '';
+				width: 617px;
+				height: 440px;
+				background-size: 617px 617px;
+				background-image: url("../images/cooperate-1.jpg");
+				position: absolute;
+				display: block;
+				z-index: -1;
+				top: 0;
+				left: 195px;
+				@include responsive(991) {
+					left: 20px;
+				}
+			}
+
+			.ifa-approval {
+				position: absolute;
+				left: 0;
+				top: 90px;
+				width: 385px;
+				height: 299px;
+				z-index: 1;
+				@include responsive(991) {
+					width: calc(385px / 2);
+					height: calc(299px / 2);
+				}
+				@include responsive(767) {
+					top: 20px;
+					width: calc(385px / 1.2);
+					height: calc(299px / 1.2);
+				}
+				@include responsive(574) {
+					width: calc(385px / 1.5);
+					height: calc(299px / 1.5);
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.cooperate-img {
+				width: 433px;
+				height: 268px;
+				position: absolute;
+				bottom: -87px;
+				right: 245px;
+				@include responsive(1199) {
+					right: 50px;
+				}
+				@include responsive(574) {
+					right: 15px;
+					bottom: -40px;
+					width: calc(433px / 1.5);
+					height: calc(268px / 1.5);
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.content {
+				position: absolute;
+				right: 0;
+				top: 45px;
+				width: 820px;
+				min-height: 425px;
+				background-color: #ae0913;
+				box-shadow: 4px 4px 6px rgba(0, 0, 0, .6);
+				max-width: 95%;
+
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					width: 69px;
+					height: 68px;
+					background-size: 69px 68px;
+					background-repeat: no-repeat;
+					background-image: url("../images/tape.png");
+				}
+
+				&:before {
+					top: -21px;
+					right: -13px;
+				}
+
+				&:after {
+					left: -13px;
+					bottom: -21px;
+				}
+
+				h2 {
+					font-size: 16px;
+					text-transform: uppercase;
+					color: rgb(255, 255, 255);
+					line-height: 1.125;
+					font-weight: 900;
+					margin-bottom: 17px;
+				}
+
+				font-size: 12px;
+				color: rgb(255, 255, 255);
+				line-height: 1.5;
+				font-weight: 500;
+				padding: 44px 45px 190px 85px;
+				@include responsive(1199) {
+					padding: 44px 45px 190px 295px;
+				}
+				@include responsive(991) {
+					padding: 20px 20px 190px 180px;
+				}
+				@include responsive(767) {
+					padding: 235px 20px 190px 20px;
+				}
+			}
+		}
+
+		&.cooperate-2 {
+			min-height: 512px;
+			margin-bottom: 150px;
+			@include responsive(767) {
+				margin-bottom: 200px;
+			}
+
+			.content {
+				max-width: 95%;
+				width: 987px;
+				min-height: 348px;
+				background-color: #ae0913;
+				box-shadow: 4px 4px 6px rgba(0, 0, 0, .6);
+				position: relative;
+
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					width: 69px;
+					height: 68px;
+					background-size: 69px 68px;
+					background-repeat: no-repeat;
+					background-image: url("../images/tape.png");
+				}
+
+				&:before {
+					top: -21px;
+					right: -13px;
+				}
+
+				&:after {
+					left: -13px;
+					bottom: -21px;
+				}
+
+				h2 {
+					font-size: 16px;
+					text-transform: uppercase;
+					color: rgb(255, 255, 255);
+					line-height: 1.125;
+					font-weight: 900;
+					margin-bottom: 17px;
+				}
+
+				h3 {
+					font-weight: 700;
+
+					&:before {
+						content: '';
+						display: block;
+						background-color: rgb(255, 255, 255);
+						width: 411px;
+						height: 1px;
+						margin: 10px 0;
+					}
+				}
+
+				font-size: 12px;
+				color: rgb(255, 255, 255);
+				line-height: 1.5;
+				font-weight: 500;
+				padding: 40px 70px;
+				@include responsive(767) {
+					padding: 40px 35px;
+				}
+				@include responsive(574) {
+					padding: 40px 35px 124px 35px;
+				}
+			}
+
+			.cooperate-img {
+				width: 545px;
+				height: 338px;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				@include responsive(1199) {
+					width: calc(545px / 1.2);
+					height: calc(338px / 1.2);
+				}
+				@include responsive(991) {
+					width: calc(545px / 1.5);
+					height: calc(338px / 1.5);
+				}
+				@include responsive(767) {
+					bottom: -120px;
+				}
+				@include responsive(767) {
+					width: calc(545px / 2);
+					height: calc(338px / 2);
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		&.cooperate-3 {
+			@include flexbox();
+			@include justify-content(flex-end);
+			margin-bottom: 140px;
+
+			&:before {
+				content: '';
+				width: 617px;
+				height: 440px;
+				background-size: 617px 617px;
+				background-image: url("../images/cooperate-1.jpg");
+				position: absolute;
+				display: block;
+				z-index: -1;
+				top: -35px;
+				left: 65px;
+			}
+
+			.content {
+				max-width: 85%;
+				width: 974px;
+				min-height: 420px;
+				background-color: #ae0913;
+				box-shadow: 4px 4px 6px rgba(0, 0, 0, .6);
+				position: relative;
+				@include responsive(767) {
+					max-width: 95%;
+				}
+
+				&:before, &:after {
+					content: '';
+					position: absolute;
+					width: 69px;
+					height: 68px;
+					background-size: 69px 68px;
+					background-repeat: no-repeat;
+					background-image: url("../images/tape.png");
+				}
+
+				&:before {
+					top: -21px;
+					right: -13px;
+				}
+
+				&:after {
+					left: -13px;
+					bottom: -21px;
+				}
+
+				h2 {
+					font-size: 16px;
+					text-transform: uppercase;
+					color: rgb(255, 255, 255);
+					line-height: 1.125;
+					font-weight: 900;
+					margin-bottom: 17px;
+				}
+
+				h3 {
+					font-weight: 700;
+
+					&:before {
+						content: '';
+						display: block;
+						background-color: rgb(255, 255, 255);
+						width: 411px;
+						height: 1px;
+						margin: 10px 0;
+						@include responsive(991) {
+							width: 200px;
+						}
+					}
+				}
+
+				font-size: 12px;
+				color: rgb(255, 255, 255);
+				line-height: 1.5;
+				font-weight: 500;
+				padding: 40px 70px 40px 160px;
+				@include responsive(991) {
+					padding: 40px 30px 40px 115px;
+				}
+				@include responsive(767) {
+					padding: 245px 30px 40px 30px;
+				}
+			}
+
+			.cooperate-img {
+				width: 301px;
+				height: 419px;
+				position: absolute;
+				top: -55px;
+				left: 0;
+				z-index: 1;
+				@include responsive(991) {
+					width: calc(301px / 1.5);
+					height: calc(419px / 1.5);
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}

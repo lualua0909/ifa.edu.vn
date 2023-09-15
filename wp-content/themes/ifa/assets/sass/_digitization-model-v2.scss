@@ -1,0 +1,641 @@
+.digitization-model-wrapper {
+	padding: 50px 0 30px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&:before {
+		content: '';
+		background-size: 1454px 397px;
+		width: 1454px;
+		height: 397px;
+		background-image: url("../images/digitization-model-text-bg.png");
+		position: absolute;
+		display: block;
+		z-index: -1;
+		left: 0;
+		bottom: 0;
+	}
+
+	.digitization-model-title {
+		text-align: center;
+		font-size: 24px;
+		color: rgb(26, 26, 26);
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		@include responsive(575) {
+			font-size: 20px;
+		}
+
+		span {
+			color: #cc2128;
+		}
+	}
+
+	.digitization-model-desc {
+		font-size: 14px;
+		color: rgb(105, 105, 105);
+		line-height: 1.143;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.digitization-model-last {
+		text-align: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 570px;
+			margin: 0 auto;
+		}
+	}
+
+	.digitization-model-first-slick-slider {
+		ul.slick-dots {
+			@include flexbox();
+			@include justify-content(center);
+			position: relative;
+			bottom: -25px;
+
+			li {
+				width: 12px;
+				height: 12px;
+				margin: 0 5px;
+				position: relative;
+
+				&.slick-active {
+					button {
+						background-color: rgb(204, 33, 40);
+					}
+				}
+
+				button {
+					width: 12px;
+					height: 12px;
+					border: 0;
+					font-size: 0;
+					color: transparent;
+					background-color: rgba(226, 122, 127, 0.502);
+					border-radius: 6px;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+
+		.digitization-model-first {
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			&.digitization-model-first-content {
+				.content {
+					margin-bottom: 20px;
+				}
+
+				h3.title {
+					font-weight: 700;
+					font-size: 20px;
+					text-transform: uppercase;
+					color: rgb(204, 33, 40);
+					margin-bottom: 10px;
+				}
+
+				.heading {
+					@include flexbox();
+					@include align-items(center);
+					margin-bottom: 10px;
+
+					.title-box {
+						&:first-child {
+							font-size: 30px;
+							font-weight: 900;
+							background-color: rgb(204, 33, 40);
+							color: #fff;
+							text-transform: uppercase;
+							padding: 4px 3px;
+							letter-spacing: 2px;
+						}
+
+						&:last-child {
+							h4 {
+								font-weight: 700;
+								font-size: 20px;
+								color: #000;
+								padding-left: 10px;
+								position: relative;
+								margin-bottom: 5px;
+
+								&:after {
+									content: '';
+									width: 100%;
+									height: 1px;
+									display: block;
+									background-color: rgb(204, 33, 40);
+									position: absolute;
+									left: 0;
+									bottom: -5px;
+								}
+							}
+
+							p {
+								font-weight: 700;
+								font-size: 25px;
+								padding-left: 10px;
+								color: rgb(204, 33, 40);
+
+								span {
+									font-weight: 300;
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+
+				.entry-content {
+					font-size: 16px;
+					font-weight: 600;
+					color: #333;
+
+					p {
+						margin-bottom: 5px;
+					}
+
+					ul {
+						li {
+							position: relative;
+							padding-left: 17px;
+							margin-bottom: 5px;
+
+							&:before {
+								position: absolute;
+								content: '\f0da';
+								font-family: FontAwesome;
+								font-size: 20px;
+								color: rgb(204, 33, 40);
+								left: 0;
+								top: -3px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.digitization-model-tabs {
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0 24px 52px 0 rgba(47, 47, 51, 0.2);
+		border-radius: 10px;
+		margin-bottom: 20px;
+		background-image: url("../images/digitization-model-tab-bg.png");
+		background-position-Y: 100%;
+		background-position-x: 123%;
+		background-repeat: no-repeat;
+		@include responsive(991) {
+			display: block !important;
+		}
+
+		.digitization-model-tablist {
+			@include flex-basis(400px);
+			max-width: 400px;
+			border-radius: 10px;
+			background-color: rgb(204, 33, 40);
+			box-shadow: 0 24px 52px 0 rgba(47, 47, 51, 0.2);
+			padding: 48px 0;
+			@include responsive(1199) {
+				@include flex-basis(30%);
+				max-width: 30%;
+			}
+			@include responsive(991) {
+				@include responsive(unset);
+				max-width: 100%;
+			}
+			@include responsive(767) {
+				padding: 10px 0;
+			}
+
+			button {
+				position: relative;
+				height: 111px;
+				text-align: left;
+				padding-left: 150px;
+				background-color: rgb(204, 33, 40);
+				border: 0;
+				border-radius: 0;
+				margin: 20px 0;
+				@include responsive(1199) {
+					padding-left: 85px;
+					height: 90px;
+				}
+				@include responsive(767) {
+					padding-left: 50px;
+					height: auto;
+					margin: 0;
+				}
+
+				&:last-child {
+					&:before {
+						content: none;
+					}
+				}
+
+				&:before {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 1px;
+					background-color: #fff;
+					position: absolute;
+					left: 0;
+					bottom: -22px;
+					@include responsive(767) {
+						bottom: 0;
+					}
+				}
+
+				&.active {
+					background-color: #fff;
+
+					span {
+						&.text {
+							color: rgb(204, 33, 40);
+						}
+
+						&.icon {
+							img {
+								filter: brightness(1) invert(0);
+							}
+						}
+					}
+				}
+
+				span {
+					display: block;
+
+					&.icon {
+						position: absolute;
+						left: 40px;
+						top: 9px;
+						width: 94px;
+						height: 94px;
+						@include responsive(1199) {
+							left: 20px;
+							width: 50px;
+							height: 50px;
+							top: 21px;
+						}
+						@include responsive(767) {
+							left: 15px;
+							width: 25px;
+							height: 25px;
+							top: 21px;
+						}
+
+						img {
+							filter: brightness(0) invert(1);
+							width: 94px;
+							height: 94px;
+							@include responsive(1199) {
+								width: 50px;
+								height: 50px;
+							}
+							@include responsive(767) {
+								width: 25px;
+								height: 25px;
+							}
+						}
+					}
+
+					&.text {
+						font-size: 16px;
+						color: #fff;
+						font-weight: bold;
+						text-transform: uppercase;
+						@include responsive(767) {
+							font-size: 14px;
+						}
+
+						span {
+							font-size: 24px;
+							@include responsive(1199) {
+								font-size: 20px;
+							}
+							@include responsive(767) {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.tab-content {
+			@include flex-basis(calc(100% - 400px));
+			max-width: calc(100% - 400px);
+			@include responsive(1199) {
+				@include flex-basis(70%);
+				max-width: 70%;
+			}
+			@include responsive(991) {
+				@include responsive(unset);
+				max-width: 100%;
+			}
+
+			.digitization-model-slick-slider {
+				.slick-slide {
+					margin: 0 10px;
+				}
+
+				.slick-list {
+					margin: 0 -10px;
+				}
+
+				ul.slick-dots {
+					@include flexbox();
+					@include justify-content(center);
+					position: relative;
+					bottom: -25px;
+
+					li {
+						width: 12px;
+						height: 12px;
+						margin: 0 5px;
+						position: relative;
+
+						&.slick-active {
+							button {
+								background-color: rgb(204, 33, 40);
+							}
+						}
+
+						button {
+							width: 12px;
+							height: 12px;
+							border: 0;
+							font-size: 0;
+							color: transparent;
+							background-color: rgba(226, 122, 127, 0.502);
+							border-radius: 6px;
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+				}
+
+				.slick-arrow {
+					width: 36px;
+					height: 36px;
+					background-color: rgb(204, 33, 40);
+					border: 0;
+					font-size: 0;
+					@include flexbox();
+					@include justify-content(center);
+					@include align-items(center);
+					position: absolute;
+					top: -75px;
+					z-index: 1;
+
+					&:hover {
+						background-color: rgb(249, 249, 249);
+
+						&:before {
+							background-image: url("../images/arrow-red.png");
+						}
+					}
+
+					&:before {
+						display: block;
+						content: '';
+						width: 14px;
+						height: 10px;
+						background-image: url("../images/arrow-white.png");
+						background-size: 14px 10px;
+					}
+
+					&.slick-prev {
+						right: 45px;
+					}
+
+					&.slick-next {
+						right: 0;
+
+						&:before {
+							@include transform(rotate(180deg));
+						}
+					}
+				}
+			}
+
+			.digitization-model-content {
+				padding: 60px 25px 30px 25px;
+				@include responsive(767) {
+					padding: 30px 15px 50px 15px;
+				}
+
+				.entry-title {
+					font-size: 25px;
+					color: rgb(204, 33, 40);
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-bottom: 40px;
+					@include responsive(767) {
+						font-size: 20px;
+						margin-bottom: 90px;
+					}
+				}
+
+				.package-card {
+					background-size: cover;
+					background-repeat: no-repeat;
+					padding-bottom: 125.11415525114155%;
+					position: relative;
+					z-index: 1;
+					cursor: pointer;
+
+					.youtube-url {
+						position: absolute;
+						font-size: 0;
+						color: transparent;
+						z-index: 1;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+					}
+
+					&:hover {
+						&:before {
+							background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(204, 33, 40, .8));
+						}
+					}
+
+					&:before {
+						content: '';
+						position: absolute;
+						z-index: -2;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0, .5));
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						z-index: -1;
+						width: 71px;
+						height: 71px;
+						background-size: 71px 71px;
+						background-image: url("../images/play-button.png");
+						top: 50%;
+						left: 50%;
+						@include transform(translate(-50%, -50%));
+					}
+
+					.package-detail {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						padding: 15px 18px;
+
+						.package-desc {
+							font-size: 12px;
+							color: rgb(255, 255, 255);
+						}
+
+						.package-title {
+							font-weight: 700;
+							color: #fff;
+							font-size: 48px;
+
+							span {
+								font-size: 15px;
+								display: block;
+							}
+						}
+					}
+				}
+
+				.package-card-2 {
+					background-size: cover;
+					background-repeat: no-repeat;
+					padding-bottom: 160.96491228070178%;
+					position: relative;
+					z-index: 1;
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 40px;
+						display: block;
+						z-index: -1;
+						background: #fff;
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						display: block;
+						z-index: -2;
+						background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+					}
+
+					.icon {
+						position: relative;
+						margin: 0 auto;
+
+						img {
+							margin: 0 auto;
+						}
+					}
+
+					.content {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						padding: 30px 15px;
+
+						.package-desc {
+							font-size: 14px;
+							font-weight: 600;
+							color: #fff;
+							text-transform: uppercase;
+						}
+
+						.package-title {
+							font-size: 31px;
+							font-weight: 800;
+							color: #fff;
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.digitization-model-banner {
+		text-align: center;
+		position: relative;
+
+		.view-more-button {
+			position: absolute;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: 20px;
+			display: block;
+			padding: 5px 15px;
+			border-radius: 100px;
+			background-color: #cc2128;
+			bottom: 90px;
+			left: 50%;
+			@include transform(translate(-50%, 0));
+			@include transition(.3s all);
+
+			&:hover {
+				@include transform(translate(-50%, -7px));
+				box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+			}
+
+			@include responsive(1199) {
+				bottom: 70px;
+			}
+			@include responsive(991) {
+				bottom: 40px;
+				font-weight: 600;
+				font-size: 17px;
+			}
+			@include responsive(767) {
+				bottom: 34px;
+				font-size: 12px;
+			}
+			@include responsive(574) {
+				bottom: 5px;
+				font-size: 12px;
+			}
+		}
+
+		img {
+			margin: 0 auto;
+		}
+	}
+}

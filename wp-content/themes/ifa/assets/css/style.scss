@@ -1,0 +1,142 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+	url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+	url('../fonts/Montserrat-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+	url('../fonts/Montserrat-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+	url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+	url('../fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Black.woff2') format('woff2'),
+	url('../fonts/Montserrat-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+	url('../fonts/Montserrat-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+	url('../fonts/Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TUV Montserrat';
+	src: url('../fonts/TUVMontserrat-Bold.woff2') format('woff2'),
+	url('../fonts/TUVMontserrat-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@import "../sass/mixins-master";
+@import "../sass/normalize";
+@import "../sass/wordpress-core";
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #333333;
+	background-color: #fff;
+	line-height: 1.4;
+	font-size: 16px;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+img {
+	vertical-align: middle;
+	height: auto;
+	width: auto;
+}
+
+@media (min-width: 1250px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		max-width: 1170px;
+	}
+}
+
+@import "../sass/header";
+@import "../sass/content-post";
+@import "../sass/archive";
+@import "../sass/hero";
+@import "../sass/education-program";
+@import "../sass/digitization-model-v2";
+@import "../sass/training";
+@import "../sass/activities";
+@import "../sass/partners";
+@import "../sass/subscribe";
+@import "../sass/on-demand-training";
+@import "../sass/message";
+@import "../sass/philosophy";
+@import "../sass/about-us";
+@import "../sass/procedure";
+@import "../sass/cooperate";
+@import "../sass/pagination";
+@import "../sass/single";
+@import "../sass/certificate-lookup";
+@import "../sass/footer";
+@import "../sass/fabs";
+@import "../sass/contact";
+@import "../sass/subscribe-2";
+@import "../sass/subscribe-3";
+@import "../sass/branch";
+@import "../sass/training-template";
+@import "../sass/team";
+@import "../sass/single-giang-vien";
+@import "../sass/archive-giang-vien";
+@import "../sass/opening-schedule";
+@import "../sass/register-course";
+@import "../sass/single-course";
+@import "../sass/form";

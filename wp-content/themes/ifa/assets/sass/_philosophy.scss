@@ -1,0 +1,143 @@
+.philosophy-wrapper {
+	padding: 50px 0 150px 0;
+
+	#breadcrumbs {
+		font-size: 12px;
+		font-weight: 300;
+		color: rgb(204, 33, 40);
+		margin-bottom: 23px;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.philosophy-img-wrapper {
+		text-align: center;
+
+		img {
+			width: 100%;
+			height: auto;
+			vertical-align: middle;
+			margin: 0 auto;
+			max-width: 1036px;
+		}
+	}
+
+	.philosophy-content-wrapper {
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+		padding-top: 55px;
+		padding-bottom: 140px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-image: -moz-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+			background-image: -webkit-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+			background-image: -ms-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+			opacity: 0.749;
+		}
+
+		.philosophy-content {
+			font-size: 18px;
+			color: rgb(255, 255, 255);
+			line-height: 1.333;
+			text-shadow: 0 1px 13px rgba(47, 47, 51, 0.3);
+			padding: 0 125px;
+			text-align: justify;
+			@include responsive(991) {
+				padding: 0;
+			}
+		}
+	}
+
+	.philosophy-mission-wrapper {
+		position: relative;
+		z-index: 1;
+		padding-top: 815px;
+		@include responsive(767) {
+			padding-top: 620px;
+		}
+		@include responsive(574) {
+			padding-top: 365px;
+		}
+
+		.philosophy-mission {
+			text-align: center;
+			width: 100%;
+			position: absolute;
+			left: 50%;
+			top: -108px;
+			@include transform(translate(-50%, 0));
+
+			img {
+				max-width: 100%;
+				width: auto;
+				height: auto;
+			}
+		}
+	}
+
+	.philosophy-banner-wrapper {
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+		padding: 35px 0;
+
+		.philosophy-banner {
+			position: relative;
+
+			img {
+				margin: 0 auto;
+				@include responsive(1199) {
+					max-height: 160px;
+				}
+				@include responsive(991) {
+					margin: unset;
+				}
+				@include responsive(767) {
+					max-height: 125px;
+				}
+				@include responsive(574) {
+					max-height: 80px;
+				}
+				@include responsive(424) {
+					max-height: 65px;
+				}
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				display: block;
+				width: 379px;
+				height: 734px;
+				background-size: 379px 734px;
+				background-repeat: no-repeat;
+				background-image: url("../images/vn-map-2.png");
+				transform: translateY(31%);
+				@include responsive(1199) {
+					width: calc(379px / 1.5);
+					height: calc(734px / 1.5);
+					background-size: calc(379px / 1.5) calc(734px / 1.5);
+				}
+				@include responsive(574) {
+					width: calc(379px / 2.5);
+					height: calc(734px / 2.5);
+					background-size: calc(379px / 2.5) calc(734px / 2.5);
+				}
+			}
+		}
+	}
+}

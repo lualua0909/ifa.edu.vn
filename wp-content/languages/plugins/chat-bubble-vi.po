@@ -1,0 +1,693 @@
+# Translation of Plugins - Chat Bubble &#8211; Floating Chat with Contact Chat Icons, Messages, Telegram, Email, SMS, Call me back - Stable (latest release) in Vietnamese
+# This file is distributed under the same license as the Plugins - Chat Bubble &#8211; Floating Chat with Contact Chat Icons, Messages, Telegram, Email, SMS, Call me back - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-04-29 02:12:25+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Plugins - Chat Bubble &#8211; Floating Chat with Contact Chat Icons, Messages, Telegram, Email, SMS, Call me back - Stable (latest release)\n"
+
+#: libraries/chat-bubble-fields.php:308
+msgid "Enter your Zalo phone number."
+msgstr "Nhập số điện thoại của bạn"
+
+#: libraries/chat-bubble-fields.php:307
+msgid "Zalo phone number"
+msgstr "Số Zalo của bạn"
+
+#: libraries/chat-bubble-fields.php:294
+msgid "Use Zalo."
+msgstr "Dùng Zalo"
+
+#: libraries/chat-bubble-fields.php:288
+msgid "Zalo"
+msgstr "Zalo"
+
+#: libraries/chat-bubble-fields.php:337
+msgid "Tawk.to chat ID"
+msgstr "ID của Tawk.to"
+
+#: libraries/chat-bubble-fields.php:324
+msgid "Use Tawk.to."
+msgstr "Sử dụng Tawk.to"
+
+#: libraries/chat-bubble-fields.php:318
+msgid "Tawk.to"
+msgstr "Tawk.to"
+
+#: libraries/chat-bubble-fields.php:338
+msgid "Enter your Tawk.to chat ID."
+msgstr "Nhập ID của Tawk.to của bạn."
+
+#: libraries/chat-bubble-fields.php:664
+msgid "Your email"
+msgstr "Email của bạn"
+
+#: libraries/chat-bubble-fields.php:696
+msgid "Your email address"
+msgstr "Địa chỉ email của bạn"
+
+#: libraries/chat-bubble-fields.php:725
+msgid "Type your name here."
+msgstr "Nhập tên của bạn"
+
+#: libraries/chat-bubble-fields.php:704
+msgid "Type your email here."
+msgstr "Nhập email của bạn"
+
+#: libraries/chat-bubble-fields.php:695
+msgid "Enter label content of Field email."
+msgstr "Nhập thông tin hiển thị của mail bạn."
+
+#: libraries/chat-bubble-fields.php:677
+msgid "Let us know more about you"
+msgstr "Chúng tôi muốn biết về bạn nhiều hơn"
+
+#: libraries/chat-bubble-fields.php:651
+msgid "Your phone"
+msgstr "Điện thoại của bạn"
+
+#: libraries/chat-bubble-fields.php:638
+msgid "Type your message here"
+msgstr "Nhập lời nhắn của bạn"
+
+#: libraries/chat-bubble-fields.php:605
+msgid "Leave your message and we will contact you as soon as possible"
+msgstr "Để lại lời nhắn của bạn, chúng tôi sẽ liên lạc với bạn sớm."
+
+#: libraries/chat-bubble-fields.php:598
+msgid "Leave a message"
+msgstr "Để lại lời nhắn"
+
+#: libraries/chat-bubble-fields.php:545 libraries/chat-bubble-fields.php:618
+msgid "Enter Footer content of Call me later."
+msgstr "Nhập nội dung Footer của Gọi lại sau (Call me later)"
+
+#: libraries/chat-bubble-fields.php:538 libraries/chat-bubble-fields.php:611
+msgid "Enter notice content of Call me later."
+msgstr "Nhập nôi dung Lưu ý của Gọi lại sau (Call me later)"
+
+#: libraries/chat-bubble-fields.php:532
+msgid "Choose the best time for the callback:"
+msgstr "Chọn thời gian cho việc gọi lại"
+
+#: libraries/chat-bubble-fields.php:531 libraries/chat-bubble-fields.php:604
+msgid "Enter Header content of Call me later."
+msgstr "Nhập nội dung Header của Gọi lại sau (Call me later)"
+
+#: libraries/chat-bubble-fields.php:676
+msgid "Enter Header content of More information."
+msgstr "Nhập nội dung Header của Thông tin thêm (More information)"
+
+#: libraries/chat-bubble-fields.php:438
+msgid "Option values"
+msgstr "Option values"
+
+#: libraries/chat-bubble-fields.php:432
+msgid "Contact Type"
+msgstr "Contact Type"
+
+#: libraries/chat-bubble-fields.php:663 libraries/chat-bubble-fields.php:703
+msgid "Enter placeholder content of Field email."
+msgstr "Nhập nội dung mẫu của Field email"
+
+#: libraries/chat-bubble-fields.php:637
+msgid "Enter placeholder content of Field message."
+msgstr "Nhập nội dung mẫu của Field message"
+
+#: libraries/chat-bubble-fields.php:552 libraries/chat-bubble-fields.php:625
+msgid "Enter form submit button of Call me later."
+msgstr "Điền nội dung dung nút gửi của form Yêu cầu gọi lại sau (Call me later)."
+
+#: libraries/chat-bubble-fields.php:525 libraries/chat-bubble-fields.php:553
+msgid "Call me later"
+msgstr "Gọi lại sau"
+
+#: libraries/chat-bubble-fields.php:419 libraries/chat-bubble-fields.php:512
+#: libraries/chat-bubble-fields.php:565
+msgid "Enter your phone number."
+msgstr "Nhập số điện thoại của bạn"
+
+#: libraries/chat-bubble-fields.php:418 libraries/chat-bubble-fields.php:511
+#: libraries/chat-bubble-fields.php:564 libraries/chat-bubble-fields.php:650
+msgid "Enter placeholder content of Field phone."
+msgstr "Nhập nội dung mẫu của Field phone"
+
+#: libraries/chat-bubble-fields.php:683
+msgid "Enter form submit button of More information."
+msgstr "Điền nội dung dung nút gửi của form Thông tin thêm (More information)."
+
+#: libraries/chat-bubble-fields.php:499
+msgid "Enter form submit button of Call me now."
+msgstr "Điền nội dung dung nút gửi của form Gọi lại ngay (Call me now)."
+
+#: libraries/chat-bubble-fields.php:493 libraries/chat-bubble-fields.php:546
+#: libraries/chat-bubble-fields.php:619
+msgid "The administrator of data you enter here will be us."
+msgstr "Dữ liệu bạn nhập vào được quản lý bởi chúng tôi"
+
+#: libraries/chat-bubble-fields.php:492
+msgid "Enter Footer content of Call me now."
+msgstr "Nhập nội dung Footer của Gọi lại ngay (Call me now)"
+
+#: libraries/chat-bubble-fields.php:485
+msgid "Enter notice content of Call me now."
+msgstr "Nhập nôi dung Lưu ý của Gọi lại ngay (Call me now)"
+
+#: libraries/chat-bubble-fields.php:484 libraries/chat-bubble-fields.php:537
+#: libraries/chat-bubble-fields.php:610
+msgid "Notice"
+msgstr "Lưu ý"
+
+#: libraries/chat-bubble-fields.php:479
+msgid "Would you like to receive a callback?"
+msgstr "Bạn có muốn nhận cuộc gọi lại không?"
+
+#: libraries/chat-bubble-fields.php:478
+msgid "Enter Header content of Call me now."
+msgstr "Nhập nội dung Header của Gọi lại ngay (Call me now)"
+
+#: libraries/chat-bubble-fields.php:471 libraries/chat-bubble-fields.php:524
+#: libraries/chat-bubble-fields.php:597
+msgid "Enter Title of Call me now."
+msgstr "Nhập tiêu đề của Gọi lại ngay (Call me now)"
+
+#: libraries/chat-bubble-fields.php:452
+msgid "Use Advanced CallBack."
+msgstr "Dùng Advanced CallBack"
+
+#: libraries/chat-bubble-fields.php:446
+msgid "Advanced CallBack"
+msgstr "Advanced CallBack"
+
+#: libraries/chat-bubble-fields.php:439
+msgid "Enter options."
+msgstr "Nhập tùy chọn"
+
+#: libraries/chat-bubble-fields.php:431
+msgid "Enter label content of Field options."
+msgstr "Nhập thông tin hiển thị của Field tùy chọn"
+
+#: libraries/chat-bubble-fields.php:411
+msgid "Your Phone Number"
+msgstr "Số điện thoại của bạn"
+
+#: libraries/chat-bubble-fields.php:349
+msgid "Use Simple CallBack."
+msgstr "Dùng Simple CallBack."
+
+#: libraries/chat-bubble-fields.php:343
+msgid "Simple CallBack"
+msgstr "Simple CallBack"
+
+#: libraries/chat-bubble-fields.php:278
+msgid "Enter your WhatsApp phone number."
+msgstr "Nhập số điện thoại WhatsApp của bạn"
+
+#: libraries/chat-bubble-fields.php:277
+msgid "WhatsApp phone number"
+msgstr "Số điện thoại WhatsApp"
+
+#: libraries/chat-bubble-fields.php:264
+msgid "Use WhatsApp."
+msgstr "Dùng WhatsApp"
+
+#: libraries/chat-bubble-fields.php:258
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: libraries/chat-bubble-fields.php:248
+msgid "Enter your Viber id."
+msgstr "Nhập Viber ID của bạn"
+
+#: libraries/chat-bubble-fields.php:247
+msgid "Viber ID"
+msgstr "Viber ID"
+
+#: libraries/chat-bubble-fields.php:234
+msgid "Use Viber."
+msgstr "Dùng Viber"
+
+#: libraries/chat-bubble-fields.php:228
+msgid "Viber"
+msgstr "Viber"
+
+#: libraries/chat-bubble-fields.php:218
+msgid "Enter your Skype id."
+msgstr "Nhập Skype ID của bạn"
+
+#: libraries/chat-bubble-fields.php:217
+msgid "Skype id"
+msgstr "Skype ID"
+
+#: libraries/chat-bubble-fields.php:204
+msgid "Use Skype."
+msgstr "Dùng Skype"
+
+#: libraries/chat-bubble-fields.php:198
+msgid "Skype"
+msgstr "Skype"
+
+#: libraries/chat-bubble-fields.php:83
+msgid "Contact Email"
+msgstr "Contact Email"
+
+#: libraries/chat-bubble-fields.php:73
+msgid "Enter your custom link."
+msgstr "Nhập custom link của bạn"
+
+#: libraries/chat-bubble-fields.php:59
+msgid "Use custom link."
+msgstr "Dùng custom link"
+
+#: libraries/chat-bubble-fields.php:53 libraries/chat-bubble-fields.php:72
+msgid "Custom Link"
+msgstr "Custom link"
+
+#: libraries/chat-bubble-fields.php:48
+msgid "Enter your phone contact."
+msgstr "Nhập số điện thoại liên hệ của bạn"
+
+#: libraries/chat-bubble-fields.php:47
+msgid "Phone contact"
+msgstr "Số điện thoại liên hệ"
+
+#: libraries/chat-bubble-fields.php:41 libraries/chat-bubble-fields.php:66
+#: libraries/chat-bubble-fields.php:96 libraries/chat-bubble-fields.php:121
+#: libraries/chat-bubble-fields.php:151 libraries/chat-bubble-fields.php:181
+#: libraries/chat-bubble-fields.php:211 libraries/chat-bubble-fields.php:241
+#: libraries/chat-bubble-fields.php:271 libraries/chat-bubble-fields.php:301
+#: libraries/chat-bubble-fields.php:331 libraries/chat-bubble-fields.php:356
+#: libraries/chat-bubble-fields.php:459
+msgid "Enter Title label of this bubble."
+msgstr "Nhập tiêu đề của bong bóng (bubble) này"
+
+#: libraries/chat-bubble-fields.php:40 libraries/chat-bubble-fields.php:65
+#: libraries/chat-bubble-fields.php:95 libraries/chat-bubble-fields.php:120
+#: libraries/chat-bubble-fields.php:150 libraries/chat-bubble-fields.php:180
+#: libraries/chat-bubble-fields.php:210 libraries/chat-bubble-fields.php:240
+#: libraries/chat-bubble-fields.php:270 libraries/chat-bubble-fields.php:300
+#: libraries/chat-bubble-fields.php:330 libraries/chat-bubble-fields.php:355
+#: libraries/chat-bubble-fields.php:458
+msgid "Title label"
+msgstr "Tiêu đề"
+
+#: libraries/chat-bubble-fields.php:34
+msgid "Use phone bubble."
+msgstr "Dùng bong bóng điện thoại (phone bubble)"
+
+#: libraries/chat-bubble-fields.php:28
+msgid "Phone"
+msgstr "Điện thoại"
+
+#: views/options-menu.php:30 views/options-menu.php:32
+msgid "Buy me a beer!"
+msgstr "Có thể mời tui bia ly beer không?"
+
+#: views/options-menu.php:24 views/options-menu.php:26
+msgid "Need Support ?"
+msgstr "Bạn có cần hỗ trợ không?"
+
+#: views/options-linkitem.php:51
+msgid "Do you want to remove this item?"
+msgstr "Bạn có muốn xóa cái này không?"
+
+#: views/options-linkitem.php:51
+msgid "Delete item"
+msgstr "Xóa mục này."
+
+#: libraries/chat-bubble-fields.php:78 libraries/chat-bubble-fields.php:133
+#: libraries/chat-bubble-fields.php:163 libraries/chat-bubble-fields.php:193
+#: libraries/chat-bubble-fields.php:223 libraries/chat-bubble-fields.php:253
+#: libraries/chat-bubble-fields.php:283 libraries/chat-bubble-fields.php:313
+#: views/options-linkitem.php:42
+msgid "Open new tab."
+msgstr "Mở tab mới"
+
+#: libraries/chat-bubble-fields.php:388 libraries/chat-bubble-fields.php:409
+#: libraries/chat-bubble-fields.php:430 libraries/chat-bubble-fields.php:694
+#: libraries/chat-bubble-fields.php:715 views/options.php:170
+msgid "Label"
+msgstr "Label"
+
+#: views/options.php:151
+msgid "Choose"
+msgstr "Chọn"
+
+#: views/options.php:147
+msgid "Avatar"
+msgstr "Ảnh đại diện"
+
+#: libraries/chat-bubble-fields.php:470 libraries/chat-bubble-fields.php:523
+#: libraries/chat-bubble-fields.php:596 views/options.php:140
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: views/options.php:131
+msgid "Always show Greeting section."
+msgstr "Luôn hiện mục Lời chào (Greeting section)"
+
+#: views/options.php:124
+msgid "Use Greeting section."
+msgstr "Dùng mục Lời chào (Greeting section)"
+
+#: views/options.php:108
+msgid "Greeting section"
+msgstr "Mục Lời chào (Greeting section)"
+
+#: views/options.php:97
+msgid "Enter your custom theme color for bubble chat."
+msgstr "Nhập màu theme tùy chọn cho bong bóng chat"
+
+#: views/options.php:94
+msgid "Bubble custom theme color"
+msgstr "Màu theme tùy chọn của bong bóng chat"
+
+#: views/options.php:86
+msgid "Your custom class"
+msgstr "Custom class của bạn"
+
+#: views/options.php:87
+msgid "Enter your custom class for bubble container: <strong>your-class-1 your-class-2</strong>"
+msgstr "Nhập các custom class cho bubble container: <strong>your-class-1 your-class-2</strong>"
+
+#: views/options.php:84
+msgid "Bubble custom class"
+msgstr "Bubble custom class"
+
+#: views/options.php:75
+msgid "Always show chat text message. It will be hidden if leave blank."
+msgstr "Luôn hiện chat text message, sẽ được ẩn đi nếu để trống."
+
+#: views/options.php:70
+msgid "Enter your chat text message"
+msgstr "Nhập chat text message"
+
+#: chat-bubble.php:323 views/cbb-meta.php:20
+msgid "Message"
+msgstr "Message"
+
+#: chat-bubble.php:322 views/cbb-meta.php:19
+msgid "IP address"
+msgstr "IP address"
+
+#: chat-bubble.php:321 views/cbb-meta.php:18
+msgid "Callback time"
+msgstr "Callback time"
+
+#: chat-bubble.php:320 views/cbb-meta.php:17
+msgid "Page link"
+msgstr "Page link"
+
+#: chat-bubble.php:319 views/cbb-meta.php:16
+msgid "Page title"
+msgstr "Tiêu đề trang"
+
+#: chat-bubble.php:318 views/cbb-meta.php:15
+msgid "Phone number"
+msgstr "Số điện thoại"
+
+#: chat-bubble.php:317 views/cbb-meta.php:14
+msgid "Email address"
+msgstr "Địa chỉ email"
+
+#: chat-bubble.php:316 views/cbb-meta.php:13 views/options.php:160
+msgid "Name"
+msgstr "Tên"
+
+#: chat-bubble.php:274
+msgid "Export CSV"
+msgstr "Export CSV"
+
+#: chat-bubble.php:186
+msgid "Settings"
+msgstr "Cài đặt"
+
+#. Author of the plugin
+msgid "Blue Coral"
+msgstr "Blue Coral"
+
+#. Plugin Name of the plugin
+msgid "Chat Bubble"
+msgstr "Chat Bubble"
+
+#: libraries/chat-bubble-fields.php:440
+msgid "Sales,Customer Support"
+msgstr "Sales, Customer Support"
+
+#: libraries/chat-bubble-fields.php:357 libraries/chat-bubble-fields.php:460
+#: libraries/chat-bubble-fields.php:472 libraries/chat-bubble-fields.php:500
+msgid "Call me now"
+msgstr "Gọi tôi ngay"
+
+#: libraries/chat-bubble-fields.php:410
+msgid "Enter label content of Field phone."
+msgstr "Nhập thông tin hiển thị của Field điện thoại"
+
+#: libraries/chat-bubble-fields.php:398
+msgid "Enter your name."
+msgstr "Nhập tên của bạn"
+
+#: libraries/chat-bubble-fields.php:397 libraries/chat-bubble-fields.php:724
+msgid "Enter placeholder content of Field name."
+msgstr "Nhập nội dung mẫu của Field tên"
+
+#: libraries/chat-bubble-fields.php:396 libraries/chat-bubble-fields.php:417
+#: libraries/chat-bubble-fields.php:510 libraries/chat-bubble-fields.php:563
+#: libraries/chat-bubble-fields.php:636 libraries/chat-bubble-fields.php:649
+#: libraries/chat-bubble-fields.php:662 libraries/chat-bubble-fields.php:702
+#: libraries/chat-bubble-fields.php:723
+msgid "Placeholder"
+msgstr "Nội dung mẫu"
+
+#: libraries/chat-bubble-fields.php:390 libraries/chat-bubble-fields.php:717
+msgid "Your name"
+msgstr "Tên của bạn"
+
+#: libraries/chat-bubble-fields.php:389 libraries/chat-bubble-fields.php:716
+msgid "Enter label content of Field name."
+msgstr "Nhập thông tin hiển thị của Field tên"
+
+#: libraries/chat-bubble-fields.php:378 libraries/chat-bubble-fields.php:626
+#: libraries/chat-bubble-fields.php:684
+msgid "Submit"
+msgstr "Gửi"
+
+#: libraries/chat-bubble-fields.php:377
+msgid "Enter form submit button label."
+msgstr "Nhập thông tin hiển thị của nút gửi"
+
+#: libraries/chat-bubble-fields.php:371
+msgid "This is footer content."
+msgstr "Đây là nội dung footer"
+
+#: libraries/chat-bubble-fields.php:370
+msgid "Enter Footer modal content."
+msgstr "Nhập nội dung modal Footer "
+
+#: libraries/chat-bubble-fields.php:369 libraries/chat-bubble-fields.php:491
+#: libraries/chat-bubble-fields.php:544 libraries/chat-bubble-fields.php:617
+msgid "Footer"
+msgstr "Footer"
+
+#: libraries/chat-bubble-fields.php:364
+msgid "Call us now"
+msgstr "Gọi chúng tôi ngay"
+
+#: libraries/chat-bubble-fields.php:363
+msgid "Enter Header modal content."
+msgstr "Nhập nội dung modal Header"
+
+#: libraries/chat-bubble-fields.php:362 libraries/chat-bubble-fields.php:477
+#: libraries/chat-bubble-fields.php:530 libraries/chat-bubble-fields.php:603
+#: libraries/chat-bubble-fields.php:675
+msgid "Header"
+msgstr "Header"
+
+#: views/options-linkitem.php:29
+msgid "Link Text"
+msgstr "Link Text"
+
+#: views/options-linkitem.php:21
+msgid "URL"
+msgstr "URL"
+
+#: views/mail/callback.php:57
+msgid "Message: %s,"
+msgstr "Message: %s,"
+
+#: views/mail/callback.php:51 views/mail/callback.php:53
+msgid "Request time: %s,"
+msgstr "Request time: %s,"
+
+#: views/mail/callback.php:31
+msgid "Email address: %s,"
+msgstr "Email address: %s,"
+
+#: views/mail/callback.php:27
+msgid "Phone: %s,"
+msgstr "Phone: %s,"
+
+#: views/mail/callback.php:23
+msgid "Name: %s,"
+msgstr "Name: %s,"
+
+#: views/mail/callback.php:19
+msgid "Detail information"
+msgstr "Thông tin chi tiết"
+
+#: views/mail/callback.php:16
+msgid "You have a callback request at %s %s"
+msgstr "Bạn có yêu cầu gọi lại %s %s"
+
+#: views/mail/callback.php:13
+msgid "Hi %s,"
+msgstr "Hi %s,"
+
+#: views/options.php:205
+msgid "Add your custom links, limit up to 3 items."
+msgstr "Thêm link custom của bạn, tối đa 3 cái"
+
+#: views/options.php:194
+msgid "Add link"
+msgstr "Thêm link"
+
+#: views/options.php:192
+msgid "Custom link"
+msgstr "Custom link"
+
+#: views/options.php:185
+msgid "Your greeting content"
+msgstr "Nội dung Lời chào của bạn"
+
+#: views/options.php:183
+msgid "Content"
+msgstr "Nội dung"
+
+#: libraries/chat-bubble-fields.php:188
+msgid "Enter your LINE id."
+msgstr "Nhập LINE ID của bạn"
+
+#: libraries/chat-bubble-fields.php:187
+msgid "LINE ID"
+msgstr "LINE ID"
+
+#: libraries/chat-bubble-fields.php:174
+msgid "Use LINE."
+msgstr "Sử dụng LINE."
+
+#: libraries/chat-bubble-fields.php:168
+msgid "LINE"
+msgstr "LINE"
+
+#: libraries/chat-bubble-fields.php:158
+msgid "Enter your telegram id."
+msgstr "Nhập Telegram ID của bạn"
+
+#: libraries/chat-bubble-fields.php:157
+msgid "Telegram ID"
+msgstr "Telegram ID"
+
+#: libraries/chat-bubble-fields.php:144
+msgid "Use Telegram."
+msgstr "Sử dụng Telegram"
+
+#: libraries/chat-bubble-fields.php:138
+msgid "Telegram"
+msgstr "Telegram"
+
+#: libraries/chat-bubble-fields.php:128
+msgid "Enter your facebook id."
+msgstr "Nhập Facebook ID của bạn"
+
+#: libraries/chat-bubble-fields.php:127
+msgid "Facebook ID"
+msgstr "Facebook ID"
+
+#: libraries/chat-bubble-fields.php:114
+msgid "Use Facebook Messenger."
+msgstr "Sử dụng Facebook Messenger."
+
+#: libraries/chat-bubble-fields.php:108
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+#: libraries/chat-bubble-fields.php:103
+msgid "Enter your contact email."
+msgstr "Nhập email liên hệ (contact email) của bạn"
+
+#: libraries/chat-bubble-fields.php:102
+msgid "Contact email"
+msgstr "Email liên hệ (contact email)"
+
+#: libraries/chat-bubble-fields.php:89
+msgid "Use contact email."
+msgstr "Dùng email liên hệ (contact email)"
+
+#: views/options.php:69
+msgid "Greeting chat message"
+msgstr "Nội dung chào hỏi (greeting)"
+
+#: views/options.php:67
+msgid "Bubble Chat Message"
+msgstr "Bubble Chat Message"
+
+#: views/options.php:57
+msgid "Using <a href=\"%s\" target=\"_blank\">Open Sans Font</a>."
+msgstr "Dùng <a href=\"%s\" target=\"_blank\">Open Sans Font</a>."
+
+#: views/options.php:51
+msgid "Bubble Fonts"
+msgstr "Phông chữ của Bubble"
+
+#: views/options.php:42
+msgid "Show Chat Bubble at website."
+msgstr "Hiển thị Chat Bubble trên website."
+
+#: views/options.php:36
+msgid "Show Bubble"
+msgstr "Hiển thị Bubble"
+
+#: views/items.php:55 views/options.php:215
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+#: views/items.php:44
+msgid "Outer Items"
+msgstr "Outer Items"
+
+#: views/items.php:38
+msgid "Inner Items"
+msgstr "Inner Items"
+
+#: views/items.php:28
+msgid "Bubble section"
+msgstr "Bubble section"
+
+#: chat-bubble.php:723
+msgid "Callback request from %s at %s"
+msgstr "Yêu cầu gọi lại từ %s lúc %s"
+
+#: chat-bubble.php:463 chat-bubble.php:472
+msgid "Bubble Items"
+msgstr "Bubble Items"
+
+#: chat-bubble.php:462 chat-bubble.php:471 views/options.php:26
+msgid "General Settings"
+msgstr "Cài đặt chung"
+
+#: chat-bubble.php:358 views/cbb-meta.php:42 views/mail/callback.php:43
+msgid "Tomorrow"
+msgstr "Ngày mai"
+
+#: chat-bubble.php:354 views/cbb-meta.php:38 views/mail/callback.php:39
+msgid "Today"
+msgstr "Hôm nay"
+
+#. Description of the plugin
+msgid "Easy to get leads with beautiful floating contact form & get followers and chat messages via Facebook Messenger, WhatsApp, Telegram, Line, Skype, Zalo, Tawk.to,…"
+msgstr "Thúc đẩy bán hàng và tăng lượng theo dõi qua fanpage bằng các Chat Bubble trên website: Facebook Messenger, WhatsApp, Telegram, Line, Skype …"

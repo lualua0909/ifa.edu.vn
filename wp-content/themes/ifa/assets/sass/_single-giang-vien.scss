@@ -1,0 +1,202 @@
+.single-giang-vien-wrapper {
+	padding: 50px 0;
+
+	.info-wrapper {
+		background: linear-gradient(180deg, #C92727 0%, #A50E10 100%);
+		border-radius: 10px;
+		padding: 24px 56px;
+		@include flexbox();
+		@include flex-wrap(wrap);
+		margin-bottom: 40px;
+		@include responsive(991) {
+			padding: 20px 25px;
+		}
+		@include responsive(767) {
+			padding: 15px;
+		}
+
+		.avatar-wrapper {
+			@include flex-basis(261px);
+			max-width: 261px;
+			@include responsive(991) {
+				@include flex-basis(150px);
+				max-width: 150px;
+			}
+			@include responsive(767) {
+				@include flex-basis(100%);
+				max-width: 100%;
+				margin-bottom: 15px;
+			}
+
+			.avatar {
+				width: 261px;
+				height: 261px;
+				border-radius: 100%;
+				border: 1px solid #FFFFFF;
+				padding: 10px;
+				@include responsive(991) {
+					width: 150px;
+					height: 150px;
+					padding: 5px;
+				}
+				@include responsive(767) {
+					margin: 0 auto;
+					width: 100px;
+					height: 100px;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.info-detail {
+			@include flex-basis(calc(100% - 261px));
+			max-width: calc(100% - 261px);
+			padding: 50px 0 0 23px;
+			@include responsive(991) {
+				padding: 15px 0 0 20px;
+				@include flex-basis(calc(100% - 150px));
+				max-width: calc(100% - 150px);
+			}
+			@include responsive(767) {
+				@include flex-basis(100%);
+				max-width: 100%;
+				text-align: center;
+				padding: 0;
+			}
+
+			.entry-title {
+				font-weight: 700;
+				font-size: 38px;
+				color: #FFFFFF;
+				margin-bottom: 16px;
+				@include responsive(991) {
+					font-size: 30px;
+					margin-bottom: 10px;
+				}
+				@include responsive(767) {
+					font-size: 20px;
+				}
+			}
+
+			.subtitle {
+				font-weight: 400;
+				font-size: 22px;
+				color: #FFFFFF;
+				margin-bottom: 24px;
+				@include responsive(991) {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+				@include responsive(767) {
+					font-size: 16px;
+				}
+			}
+
+			.desc {
+				font-weight: 400;
+				font-size: 20px;
+				color: #FFFFFF;
+				@include responsive(991) {
+					font-size: 18px;
+				}
+				@include responsive(767) {
+					font-size: 14px;
+				}
+
+				p {
+					margin-bottom: 10px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	#giang-vien-tab {
+		@include flexbox();
+		@include flex-wrap(wrap);
+		border: 1px solid #ECECEC;
+		border-radius: 8px;
+		overflow: hidden;
+		margin-bottom: 23px;
+
+		li {
+			@include flex-basis(25%);
+			max-width: 25%;
+			border-right: 1px solid #ECECEC;
+			@include responsive(767) {
+				@include flex-basis(100%);
+				max-width: 100%;
+				border-right: 0;
+				border-bottom: 1px solid #ECECEC;
+			}
+
+			&:last-child {
+				border: 0;
+			}
+
+			button {
+				margin-bottom: 0;
+				border: 0;
+				border-radius: 0;
+				text-align: center;
+				width: 100%;
+				font-weight: 400;
+				font-size: 16px;
+				color: #2C2C2C;
+				@include transition(.3s all);
+
+				&.active, &:hover {
+					background: #FFDDDE;
+					color: #CC2128;
+				}
+			}
+		}
+	}
+
+	#giang-vien-tab-content {
+		ul {
+			li {
+				position: relative;
+				padding-left: 23px;
+				padding-bottom: 40px;
+
+				&:last-child {
+					&:after {
+						content: none;
+					}
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 5px;
+					display: block;
+					width: 13px;
+					height: 13px;
+					background-image: url("../images/list-dot.png");
+					background-size: 13px 13px;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					width: 1px;
+					top: 16px;
+					bottom: -6px;
+					left: 6px;
+					display: block;
+					border-left: 1px dashed #D76E72;
+				}
+			}
+		}
+	}
+}

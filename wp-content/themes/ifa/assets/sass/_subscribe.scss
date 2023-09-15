@@ -1,0 +1,126 @@
+.subscribe-wrapper {
+	padding-top: 100px;
+	position: relative;
+	z-index: 2;
+
+	.container {
+		position: relative;
+	}
+
+	.subscribe-container {
+		background-size: cover;
+		background-repeat: no-repeat;
+		box-shadow: 3.399px 10.462px 29.44px 2.56px rgba(204, 33, 40, 0.42);
+		border-radius: 10px;
+		width: 100%;
+		z-index: 1;
+		overflow: hidden;
+		min-height: 315px;
+		padding: 50px 15px 30px 15px;
+		position: relative;
+		margin-bottom: -150px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			background-image: -moz-linear-gradient(-162deg, rgba(243, 40, 48, 0.859) 2%, rgba(215, 30, 38, 0.859) 48%, rgba(186, 20, 27, 0.859) 100%);
+			background-image: -webkit-linear-gradient(-162deg, rgba(243, 40, 48, 0.859) 2%, rgba(215, 30, 38, 0.859) 48%, rgba(186, 20, 27, 0.859) 100%);
+			background-image: -ms-linear-gradient(-162deg, rgba(243, 40, 48, 0.859) 2%, rgba(215, 30, 38, 0.859) 48%, rgba(186, 20, 27, 0.859) 100%);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		.subscribe-title {
+			color: rgb(255, 255, 255);
+			line-height: 1.25;
+			text-align: center;
+			font-weight: 300;
+			font-size: 30px;
+			margin-bottom: 30px;
+			@include responsive(991) {
+				font-size: 30px;
+			}
+			@include responsive(767) {
+				font-size: 25px;
+			}
+			@include responsive(575) {
+				font-size: 20px;
+			}
+
+			span {
+				font-weight: 800;
+			}
+		}
+
+		.subscribe-desc {
+			color: rgb(255, 255, 255);
+			max-width: 800px;
+			margin: 0 auto 30px auto;
+		}
+
+		.subscribe-form-wrapper {
+			@include flexbox();
+			@include justify-content(center);
+
+			#subscribe-form {
+				@include flex-basis(640px);
+				max-width: 640px;
+
+				::-webkit-input-placeholder { /* Edge */
+					color: rgb(114, 114, 114);
+				}
+
+				:-ms-input-placeholder { /* Internet Explorer 10-11 */
+					color: rgb(114, 114, 114);
+				}
+
+				::placeholder {
+					color: rgb(114, 114, 114);
+				}
+
+				.invalid-feedback {
+					color: yellow;
+				}
+
+				input {
+					border-radius: 3px;
+					background-color: rgb(255, 255, 255);
+					height: 60px;
+					font-size: 16px;
+					color: rgb(0, 0, 0);
+					border: 0;
+					@include responsive(991) {
+						height: 49px;
+					}
+					@include responsive(767) {
+						margin-bottom: 15px;
+					}
+				}
+
+				button {
+					border-radius: 3px;
+					background-color: rgb(255, 255, 255);
+					height: 60px;
+					width: 190px;
+					font-size: 18px;
+					color: rgb(191, 13, 62);
+					font-weight: 700;
+					border: 0;
+					@include transition(.3s all);
+					@include responsive(991) {
+						height: 49px;
+						width: 100%;
+					}
+
+					&:hover {
+						@include transform(translateY(-5px));
+						box-shadow: 0 4px 9px rgba(0, 0, 0, .5);
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,149 @@
+.footer-wrapper {
+	background-color: #b8222e;
+	padding-top: 100px;
+	@include responsive(991) {
+		padding-top: 150px;
+	}
+
+	.footer-widgets {
+		padding: 110px 0 50px 0;
+		@include responsive(991) {
+			padding: 30px 0;
+		}
+
+		.footer-widget {
+			.footer-widget-title {
+				font-size: 22px;
+				color: rgb(255, 255, 255);
+				font-weight: bold;
+				line-height: 1.318;
+				margin-bottom: 28px;
+				@include responsive(767) {
+					margin-bottom: 10px;
+				}
+			}
+
+			&.footer-widget-2, &.footer-widget-3, &.footer-widget-4 {
+				padding-top: 45px;
+				@include responsive(767) {
+					padding-top: 15px;
+				}
+			}
+
+			&.footer-widget-1 {
+				.footer-logo {
+					margin-bottom: 10px;
+
+					img {
+						max-height: 120px;
+						max-width: 200px;
+						@include responsive(767) {
+							max-height: 80px;
+						}
+					}
+				}
+
+				.desc {
+					font-size: 14px;
+					color: rgb(255, 255, 255);
+					line-height: 1.286;
+					margin-bottom: 30px;
+					@include responsive(767) {
+						margin-bottom: 15px;
+					}
+				}
+
+				.hotline-button {
+					display: inline-block;
+					position: relative;
+					font-size: 20px;
+					color: rgb(255, 255, 255);
+					font-weight: bold;
+					line-height: 1.5;
+					padding-left: 56px;
+					@include responsive(767) {
+						font-size: 16px;
+						padding-left: 40px;
+					}
+
+					.icon {
+						position: absolute;
+						left: 5px;
+						top: 11px;
+
+						img {
+							@include responsive(767) {
+								height: 25px;
+								width: 25px;
+							}
+						}
+					}
+				}
+			}
+
+			&.footer-widget-4 {
+				address {
+					display: inline-block;
+					font-size: 14px;
+					color: rgb(255, 255, 255);
+
+					p {
+						margin-bottom: 16px;
+					}
+				}
+
+				.social-list {
+					@include flexbox();
+					@include flex-wrap(wrap);
+					margin-top: 8px;
+
+					li {
+						@include flex-basis(37px);
+						max-width: 37px;
+						margin-right: 10px;
+
+						a {
+							border-radius: 50%;
+							background-color: rgb(255, 255, 255);
+							box-shadow: 0 0 24px 0 rgba(196, 206, 213, 0.44);
+							width: 37px;
+							height: 37px;
+							@include flexbox();
+							@include justify-content(center);
+							@include align-items(center);
+						}
+					}
+				}
+			}
+
+			ul.footer-links {
+				li {
+					margin-bottom: 16px;
+					@include responsive(767) {
+						margin-bottom: 5px;
+					}
+
+					a {
+						display: inline-block;
+						font-size: 14px;
+						color: rgb(255, 255, 255);
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid rgb(242, 242, 242);
+		color: rgb(255, 255, 255);
+		font-style: italic;
+		padding: 17px 0;
+		@include responsive(991) {
+			text-align: center;
+		}
+		@include responsive(767) {
+			font-size: 14px;
+			padding: 10px 0;
+		}
+	}
+}

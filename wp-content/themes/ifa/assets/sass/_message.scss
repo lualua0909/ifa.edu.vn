@@ -1,0 +1,167 @@
+.message-wrapper {
+	padding: 50px 0;
+	margin-bottom: 200px;
+
+	#breadcrumbs {
+		font-size: 12px;
+		font-weight: 300;
+		color: rgb(204, 33, 40);
+		margin-bottom: 165px;
+		@include responsive(575) {
+			margin-bottom: 45px;
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.message-detail-wrapper {
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+		padding-bottom: 315px;
+		padding-top: 30px;
+		@include responsive(575) {
+			padding-bottom: 190px;
+		}
+
+		&:before {
+			background-color: rgba(204, 33, 40, .9);
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+		}
+
+		.entry-title {
+			text-align: center;
+			margin-bottom: 20px;
+			position: relative;
+
+			img {
+				@include responsive(991) {
+					max-height: 110px;
+				}
+				@include responsive(575) {
+					max-height: 80px;
+				}
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				right: 0;
+				bottom: -50px;
+				display: block;
+				width: 282px;
+				height: 502px;
+				background-size: 282px 502px;
+				background-repeat: no-repeat;
+				background-image: url("../images/vn-map.png");
+				@include responsive(991) {
+					width: calc(282px / 1.5);
+					height: calc(502px / 1.5);
+					background-size: calc(282px / 1.5) calc(502px / 1.5);
+				}
+				@include responsive(575) {
+					bottom: -10px;
+					width: calc(282px / 3);
+					height: calc(502px / 3);
+					background-size: calc(282px / 3) calc(502px / 3);
+				}
+			}
+		}
+
+		.message-desc {
+			font-size: 18px;
+			color: rgb(255, 254, 254);
+			line-height: 1.333;
+		}
+	}
+
+	.message-video-wrapper {
+		position: relative;
+		z-index: 1;
+
+		.video-wrapper {
+			position: absolute;
+			width: 90%;
+			max-width: 860px;
+			height: 580px;
+			overflow: hidden;
+			border-radius: 10px;
+			left: 50%;
+			top: 50%;
+			z-index: 1;
+			@include transform(translate(-50%, -50%));
+			@include responsive(991) {
+				height: 400px;
+			}
+			@include responsive(575) {
+				height: 250px;
+			}
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.massage-content-wrapper {
+		padding-top: 370px;
+		@include responsive(575) {
+			padding-top: 190px;
+		}
+
+		.massage-content {
+			font-size: 18px;
+			color: rgb(196, 33, 45);
+			line-height: 1.333;
+			margin-bottom: 40px;
+
+			p {
+				margin-bottom: 22px;
+			}
+		}
+
+		.position {
+			text-align: right;
+			font-size: 18px;
+			font-weight: 700;
+			font-style: italic;
+			text-transform: uppercase;
+			color: rgb(196, 33, 45);
+		}
+
+		.name {
+			text-align: right;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: rgb(196, 33, 45);
+			margin-bottom: 20px;
+
+			span {
+				font-size: 16px;
+				text-transform: initial;
+			}
+		}
+
+		.signature {
+			text-align: right;
+
+			img {
+				max-height: 75px;
+			}
+		}
+	}
+}

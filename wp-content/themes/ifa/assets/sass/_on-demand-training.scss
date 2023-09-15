@@ -1,0 +1,187 @@
+.on-demand-training-wrapper {
+	padding: 50px 0;
+	background-color: rgba(255, 255, 255);
+	margin-bottom: 275px;
+
+	#breadcrumbs {
+		font-size: 12px;
+		font-weight: 300;
+		color: rgb(204, 33, 40);
+		margin-bottom: 23px;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.on-demand-training-detail {
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1;
+		padding: 50px 0;
+
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:before {
+			z-index: -2;
+			background-color: rgba(26, 26, 26, .8);
+		}
+
+		&:after {
+			z-index: -1;
+			background-image: -moz-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+			background-image: -webkit-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+			background-image: -ms-linear-gradient(90deg, rgba(136, 0, 0, 0.99608) 0%, rgba(136, 0, 0, 0) 100%);
+		}
+
+		.entry-title {
+			font-size: 26px;
+			color: rgb(255, 255, 255);
+			text-transform: uppercase;
+			font-weight: 900;
+			margin-bottom: 10px;
+			@include responsive(767) {
+				font-size: 16px;
+			}
+		}
+
+		.entry-content {
+			font-size: 16px;
+			color: rgb(255, 255, 255);
+			line-height: 1.5;
+			font-weight: 300;
+
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.education-program-wrapper {
+		.education-program-title {
+			font-size: 24px;
+			color: rgb(204, 33, 40);
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.2;
+			text-align: center;
+			margin: 0 auto 90px auto;
+			max-width: 628px;
+			@include responsive(767) {
+				font-size: 16px;
+				margin: 0 auto 50px auto;
+			}
+		}
+
+		.education-programs {
+			@include flexbox();
+			@include flex-wrap(wrap);
+			position: relative;
+			z-index: 1;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: 0;
+				height: 1px;
+				background-color: rgba(255, 255, 255);
+			}
+
+			.education-program {
+				@include flex-basis(calc(100% / 3));
+				@include responsive(992) {
+					@include flex-basis(50%);
+				}
+
+				&:nth-child(3n+2), &:nth-child(3n+1) {
+					h3 {
+						a {
+							border-right: 1px solid rgb(229, 76, 76);
+							@include responsive(992) {
+								border-right: 0;
+							}
+						}
+					}
+				}
+
+				&:nth-child(odd) {
+					h3 {
+						a {
+							@include responsive(992) {
+								border-right: 1px solid rgb(229, 76, 76);
+							}
+						}
+					}
+				}
+
+				h3 {
+					a {
+						@include flexbox();
+						@include align-items(center);
+						@include justify-content(center);
+						text-align: center;
+						color: rgb(2, 2, 48);
+						font-weight: 700;
+						font-size: 20px;
+						text-transform: uppercase;
+						padding: 50px 30px;
+						min-height: 202px;
+						border-bottom: 1px solid rgb(229, 76, 76);
+						@include responsive(992) {
+							padding: 20px;
+						}
+						@include responsive(767) {
+							font-size: 14px;
+							padding: 50px 10px;
+							min-height: unset;
+						}
+
+						&:hover {
+							background-color: rgb(204, 33, 40);
+							color: rgb(255, 255, 255);
+							box-shadow: 0 50px 90px 10px rgba(229, 76, 76, 0.2);
+						}
+					}
+				}
+			}
+		}
+
+		.button-wrapper {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 60px;
+
+			.view-more-button {
+				display: inline-block;
+				font-size: 14px;
+				color: rgb(254, 254, 254);
+				font-weight: 700;
+				border-radius: 5px;
+				background-color: rgb(204, 33, 40);
+				text-align: center;
+				width: 177px;
+				padding: 16px 5px;
+			}
+		}
+
+		.education-program-content {
+			font-size: 14px;
+			color: rgb(2, 2, 48);
+			line-height: 1.286;
+
+			p {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

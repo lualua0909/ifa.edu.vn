@@ -1,0 +1,72 @@
+.page-template-contact {
+	.footer-wrapper {
+		@include responsive(991) {
+			padding-top: 0;
+		}
+	}
+}
+
+.subscribe-wrapper-2 {
+	background-color: #b8222e;
+	padding: 100px 0;
+	color: #fff;
+	@include responsive(991) {
+		padding: 48px 0;
+	}
+
+	.subscribe-form-wrapper {
+		.form-desc {
+			font-weight: 500;
+			margin-bottom: 30px;
+		}
+
+		form {
+			.form-gr {
+				margin-bottom: 30px;
+
+				label {
+					font-weight: 500;
+					margin-bottom: 10px;
+				}
+
+				input {
+					border-radius: 3px;
+					background-color: #fff;
+					height: 60px;
+					font-size: 16px;
+					color: #000;
+					border: 0;
+				}
+
+				textarea {
+					border-radius: 3px;
+					background-color: #fff;
+					color: #000;
+					border: 0;
+					font-size: 16px;
+				}
+			}
+
+			button {
+				border-radius: 3px;
+				background-color: rgb(255, 255, 255);
+				height: 60px;
+				width: 190px;
+				font-size: 18px;
+				color: rgb(191, 13, 62);
+				font-weight: 700;
+				border: 0;
+				@include transition(.3s all);
+				@include responsive(991) {
+					height: 49px;
+					width: 100%;
+				}
+
+				&:hover {
+					@include transform(translateY(-5px));
+					box-shadow: 0 4px 9px rgba(0, 0, 0, .5);
+				}
+			}
+		}
+	}
+}

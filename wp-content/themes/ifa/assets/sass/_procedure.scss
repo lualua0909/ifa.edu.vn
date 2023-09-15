@@ -1,0 +1,406 @@
+.procedure-wrapper {
+	padding: 100px 0;
+	overflow: hidden;
+	margin-bottom: 200px;
+
+	#breadcrumbs {
+		font-size: 12px;
+		font-weight: 300;
+		color: rgb(204, 33, 40);
+		margin-bottom: 23px;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.entry-title {
+		font-size: 25px;
+		color: rgb(204, 33, 40);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;
+		@include responsive(991) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.img-wrapper {
+		text-align: center;
+		margin: 50px 0;
+		@include responsive(767) {
+			margin: 30px 0;
+		}
+
+		img {
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+
+		.img-desktop-wrapper {
+			@include responsive(991) {
+				display: none;
+			}
+		}
+
+		.img-mobile-wrapper {
+			display: none;
+			@include responsive(991) {
+				display: block;
+			}
+		}
+	}
+
+	.procedure-detail-wrapper {
+		position: relative;
+
+		.procedure-detail {
+			max-width: 865px;
+			margin: 0 auto;
+
+			.procedure-content {
+				position: absolute;
+				max-width: 340px;
+				@include responsive(1440) {
+					max-width: 100%;
+				}
+				@include responsive(991) {
+					position: relative;
+					top: unset;
+					left: unset;
+					right: unset;
+					text-align: left;
+					margin-bottom: 30px;
+				}
+
+				.procedure-title {
+					font-weight: 800;
+					text-transform: uppercase;
+					color: rgb(204, 33, 40);
+					margin-bottom: 6px;
+					@include textWithEllipsisMH(16, 1.2, 2);
+				}
+
+				.entry-content {
+					font-weight: 500;
+					@include textWithEllipsis(14, 1.2, 4);
+				}
+
+				&:nth-child(odd) {
+					left: unset;
+					right: 68%;
+					text-align: right;
+					@include responsive(1810) {
+						right: 70%;
+					}
+					@include responsive(1440) {
+						right: 75%;
+					}
+					@include responsive(1199) {
+						right: 71%;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&:nth-child(even) {
+					right: unset;
+					left: 68%;
+					@include responsive(1810) {
+						left: 70%;
+					}
+					@include responsive(1440) {
+						left: 75%;
+					}
+					@include responsive(1199) {
+						left: 71%;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&.procedure-content-1 {
+					top: 533px;
+					@include responsive(1199) {
+						top: 330px;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&.procedure-content-2 {
+					top: 456px;
+					@include responsive(1199) {
+						top: 288px;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&.procedure-content-3 {
+					top: 398px;
+					@include responsive(1199) {
+						top: 218px;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&.procedure-content-4 {
+					top: 342px;
+					@include responsive(1199) {
+						top: 175px;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&.procedure-content-5 {
+					top: 265px;
+					@include responsive(1199) {
+						top: 109px;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+
+				&.procedure-content-6 {
+					top: 205px;
+					@include responsive(1199) {
+						top: 68px;
+					}
+					@include responsive(991) {
+						position: relative;
+						top: unset;
+						left: unset;
+						right: unset;
+						text-align: left;
+					}
+				}
+			}
+
+			.procedure-img {
+				text-align: center;
+				@include responsive(991) {
+					display: none;
+				}
+
+				img {
+					max-width: 865px;
+					height: auto;
+					margin: 0 auto;
+					@include responsive(1199) {
+						max-width: 550px;
+					}
+				}
+			}
+		}
+	}
+
+	.procedure-img-title {
+		font-size: 25px;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.2;
+		text-align: center;
+		color: #040404;
+		margin-bottom: 30px;
+
+		span {
+			color: rgb(204, 33, 40);
+		}
+	}
+
+	.procedure-img-carousel {
+		.slick-arrow {
+			z-index: 1;
+			position: absolute;
+			bottom: -30px;
+			width: 45px;
+			height: 45px;
+			background-size: 45px 45px;
+			background-repeat: no-repeat;
+			background-image: url('../images/procedure-arrow.png');
+			font-size: 0;
+			color: transparent;
+			background-color: transparent;
+			border: 0;
+			@include responsive(991) {
+				bottom: 50%;
+				background-color: #fff;
+				border-radius: 100px;
+			}
+
+			&.slick-next {
+				right: 28%;
+				@include responsive(991) {
+					right: 30px;
+				}
+			}
+
+			&.slick-prev {
+				left: 28%;
+				@include transform(rotate(180deg));
+				@include responsive(991) {
+					left: 30px;
+				}
+			}
+		}
+
+		.slick-list {
+			padding: 45px 100px !important;
+		}
+
+		.slick-center {
+			-webkit-transform: scale(1.25);
+			-moz-transform: scale(1.25);
+			transform: scale(1.25);
+			position: relative;
+			z-index: 1;
+
+			.procedure-img-detail {
+				.procedure-img-content {
+					opacity: 1;
+				}
+			}
+		}
+
+		.procedure-img-detail {
+			position: relative;
+			border-radius: 0 0 5px 5px;
+			overflow: hidden;
+
+			.procedure-img {
+				height: 310px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			.procedure-img-content {
+				border-radius: 0 0 5px 5px;
+				background-color: rgb(204, 33, 40);
+				box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.1);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				padding: 10px 30px;
+				opacity: 0;
+				@include responsive(767) {
+					padding: 10px 15px;
+				}
+
+				h2 {
+					font-size: 16px;
+					color: rgb(255, 255, 255);
+					font-weight: 600;
+					text-transform: uppercase;
+					line-height: 1.2;
+					margin-bottom: 14px;
+					@include responsive(1199) {
+						font-size: 14px;
+					}
+					@include responsive(574) {
+						font-size: 12px;
+						margin-bottom: 5px;
+					}
+				}
+
+				.post-meta {
+					font-size: 12px;
+					color: rgb(255, 255, 255);
+					font-style: italic;
+					width: 100%;
+					@include flexbox();
+					@include flex-wrap(wrap);
+					@include responsive(575) {
+						@include flex-direction(column);
+					}
+
+					.post-date {
+						@include flex-basis(114px);
+						max-width: 114px;
+						@include responsive(1199) {
+							@include flex-basis(100%);
+							max-width: 100%;
+						}
+					}
+
+					.post-location {
+						@include flex-basis(calc(100% - 228px));
+						max-width: calc(100% - 228px);
+						@include responsive(1199) {
+							@include flex-basis(100%);
+							max-width: 100%;
+						}
+					}
+
+					.post-link {
+						display: inline-block;
+						font-size: 14px;
+						color: rgb(255, 255, 255);
+						font-weight: 500;
+						border: 1px solid #fff;
+						font-style: normal;
+						border-radius: 4px;
+						padding: 4px 17px;
+						@include flex-basis(114px);
+						max-width: 114px;
+						@include responsive(1199) {
+							margin-top: 10px;
+							@include flex-basis(100%);
+							max-width: 100%;
+							text-align: center;
+						}
+						@include responsive(574) {
+							font-size: 12px;
+							padding: 4px 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

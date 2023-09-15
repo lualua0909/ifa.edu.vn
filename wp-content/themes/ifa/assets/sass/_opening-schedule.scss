@@ -1,0 +1,207 @@
+.opening-schedule-wrapper {
+	padding-bottom: 50px;
+
+	.partner-title {
+		text-align: center;
+		font-size: 24px;
+		color: rgb(26, 26, 26);
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 35px;
+		@include responsive(575) {
+			font-size: 20px;
+		}
+
+		span {
+			color: #cc2128;
+		}
+	}
+
+	.opening-schedule-table {
+		width: 100%;
+		border-collapse: collapse;
+
+		thead, tbody tr {
+			display: table;
+			width: 100%;
+			table-layout: fixed;
+		}
+
+		.opening-schedule-table-tbody {
+			display: block;
+			max-height: 1000px;
+			overflow: auto;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+
+		th, td {
+			&.name {
+				width: 35%;
+				@include responsive(991) {
+					width: 100%;
+				}
+			}
+
+			&.timetable {
+				width: 11%;
+				@include responsive(991) {
+					width: 100%;
+				}
+			}
+
+			&.date {
+				width: 11%;
+				@include responsive(991) {
+					width: 100%;
+				}
+			}
+
+			&.session {
+				width: 11%;
+				@include responsive(991) {
+					width: 100%;
+				}
+			}
+
+			&.fee {
+				width: 10%;
+				@include responsive(991) {
+					width: 100%;
+				}
+			}
+
+			&.location {
+				width: 10%;
+				@include responsive(991) {
+					width: 100%;
+				}
+			}
+		}
+
+		td {
+			padding: 10px 10px;
+			border: 1px solid #ddd;
+			text-align: center;
+			font-size: 16px;
+			vertical-align: middle;
+
+			&.name {
+				text-align: left;
+				font-weight: 600;
+
+				a {
+					color: inherit;
+
+					&:hover {
+						color: #cc2128;
+					}
+				}
+
+				span {
+					color: #cc2128;
+					font-weight: 700;
+				}
+			}
+
+			&.buttons {
+				a {
+					display: inline-block;
+					background-color: #cc2128;
+					border: 1px solid #cc2128;
+					border-radius: 5px;
+					white-space: nowrap;
+					line-height: 30px;
+					text-align: center;
+					padding: 0 10px;
+					color: #fff;
+					font-size: 14px;
+					@include transition(.3s all);
+					margin: 3px 0;
+					min-width: 95px;
+
+					&:hover {
+						background-color: #a91f24;
+					}
+
+					&:nth-child(even) {
+						background-color: transparent;
+						border: 1px solid #cc2128;
+						color: #cc2128;
+
+						&:hover {
+							background-color: #a91f24;
+							border: 1px solid #a91f24;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		th {
+			padding: 12px 15px;
+			border: 1px solid #ddd;
+			text-align: center;
+			font-size: 16px;
+			background-color: #cc2128;
+			color: #ffffff;
+			vertical-align: middle;
+		}
+
+		tbody {
+			tr {
+				&:nth-child(even) {
+					background-color: #F7F7F7;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.opening-schedule-table {
+			thead {
+				display: none;
+			}
+
+			display: block;
+			width: 100%;
+
+			tbody {
+				display: block;
+				width: 100%;
+			}
+
+			tr {
+				display: block;
+				width: 100%;
+				margin-bottom: 15px;
+			}
+
+			td {
+				display: block;
+				width: 100%;
+				padding-left: 50%;
+				text-align: left;
+				position: relative;
+
+				&.action-buttons {
+					padding-left: 15px;
+				}
+
+				&::before {
+					content: attr(data-label);
+					position: absolute;
+					left: 0;
+					width: 50%;
+					padding-left: 15px;
+					font-size: 15px;
+					font-weight: bold;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
